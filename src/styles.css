@@ -1,0 +1,15 @@
+.Input, .Input__header ,.Input__field ,.ant-input {
+    margin: "0%";
+    width: "20%";
+    height: "40%";
+    background-color: "white";
+    margin-block-end: "5%";
+    margin-inline-end: "5%";
+    color: "black";
+    font-size: "18px";
+    font-weight: "bold";
+}
+
+* {
+    color: gray ;
+}

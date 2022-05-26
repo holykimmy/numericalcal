@@ -1,6 +1,9 @@
+
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Input, Button, Layout } from "antd";
+import "../../styles.css";
+
 const { Content } = Layout;
 const math = require("mathjs");
 function Inputbisection({ addvalue, addpost }) {
@@ -20,6 +23,7 @@ function Inputbisection({ addvalue, addpost }) {
     addvalue(xl, xr, fx);
     cal(xl, xr, fx);
   }
+
   function cal(xl1, xr1, fx) {
     let fxr,
       fxm,
@@ -77,56 +81,24 @@ function Inputbisection({ addvalue, addpost }) {
     setXr("");
     setFx("");
   }
+
   return (
     <div className="Input">
       <div className="Input__header"></div>
       <Content style={{ background: "white" }}>
         <Input
-          style={{
-            margin: "0%",
-            width: "11%",
-            height: "40%",
-            backgroundColor: "white",
-            marginInlineEnd: "5%",
-            marginBlockEnd: "5%",
-            color: "black",
-            fontSize: "18px",
-            fontWeight: "bold",
-          }}
           className="Input__field"
           type="text"
           placeholder="Please in put Xl"
           onChange={onChangexl}
         />
         <Input
-          style={{
-            margin: "0%",
-            width: "11%",
-            height: "40%",
-            backgroundColor: "white",
-            marginInlineEnd: "5%",
-            marginBlockEnd: "5%",
-            color: "black",
-            fontSize: "18px",
-            fontWeight: "bold",
-          }}
           className="Input__field"
           type="text"
           placeholder="Please in put XR"
           onChange={onChangexr}
         />
         <Input
-          style={{
-            margin: "0%",
-            width: "11%",
-            height: "40%",
-            backgroundColor: "white",
-            marginInlineEnd: "5%",
-            marginBlockEnd: "5%",
-            color: "black",
-            fontSize: "18px",
-            fontWeight: "bold",
-          }}
           className="Input__field"
           type="text"
           placeholder="Please in put FX"

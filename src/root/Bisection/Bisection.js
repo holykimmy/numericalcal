@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import Inputbisection from "./Inputbisection.js";
 import { Table, Layout, Button } from "antd";
 import Draw from "./Draw.js";
+import "../../styles.css"
 let id = 0;
+
 function Bisection() {
   const columns = [
     {
@@ -32,10 +34,12 @@ function Bisection() {
     xr: "",
     fx: " ",
   });
-  function clear() {
-    setPost([]);
-    setValue([]);
-  }
+
+  // function clear() {
+  //   setPost([]);
+  //   setValue([]);
+  // }
+  
   function addvalue(a, b, c) {
     setValue({ xl: a, xr: b, fx: c });
     addpost(a, b, 0);
@@ -50,7 +54,7 @@ function Bisection() {
       <Layout style={{ background: "white" }}>
         <div id="graph">
           <Inputbisection addvalue={addvalue} addpost={addpost} />
-          <Button onClick={() => clear()}>Clear</Button>
+          {/* <Button onClick={() => clear()}>Clear</Button> */}
           <Draw fx={value.fx} />
           {posts.length !== 0 && <Table columns={columns} dataSource={posts} />}
         </div>
