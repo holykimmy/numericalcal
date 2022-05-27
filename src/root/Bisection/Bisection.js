@@ -35,10 +35,10 @@ function Bisection() {
     fx: " ",
   });
 
-  // function clear() {
-  //   setPost([]);
-  //   setValue([]);
-  // }
+  function clear() {
+    setPost([]);
+    setValue([]);
+  }
   
   function addvalue(a, b, c) {
     setValue({ xl: a, xr: b, fx: c });
@@ -54,7 +54,7 @@ function Bisection() {
       <Layout style={{ background: "white" }}>
         <div id="graph">
           <Inputbisection addvalue={addvalue} addpost={addpost} />
-          {/* <Button onClick={() => clear()}>Clear</Button> */}
+          <Button onClick={() => clear()}>Clear</Button>
           <Draw fx={value.fx} />
           {posts.length !== 0 && <Table columns={columns} dataSource={posts} />}
         </div>
