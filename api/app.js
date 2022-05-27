@@ -27,6 +27,7 @@ const options = {
 };
 const openapiSpecification = swaggerJsDoc(options);
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(openapiSpecification));
+
 /**
  * @swagger
  * /:
