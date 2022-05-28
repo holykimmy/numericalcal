@@ -61,12 +61,13 @@ app.get("/", (req, res) => {
   res.send(req.app.api.get("api"));
 });
 app.get("/:id", (req, res) => {
-  console.log(req.query);
+  console.log("chacking",req.query);
   if (!req.app.api.get("api").find({ id: req.params.id }).value()) {
     res.sendStatus(404);
   }
   res.send(req.app.api.get("api").find({ id: req.params.id }).value());
 });
+
 app.listen(4000, () => {
   console.log("start server");
 });

@@ -15,6 +15,8 @@ import Conjugate from "../linear/conjugate/Conjugate.js";
 import Spline from "../interpolation/Sp.js";
 import Newtons from "../interpolation/Newton.js";
 import Lagrange from "../interpolation/Lagrange.js";
+import Linear from "../regresstion/Linear.js";
+
 function Select(props) {
   if (props.value === "1") {
     return <Bisection />;
@@ -48,6 +50,8 @@ function Select(props) {
     return <Newtons />;
   } else if (props.value === "14") {
     return <Lagrange />;
+  } else if (props.value === "18") {
+    return <Linear />;
   } else {
     return <p></p>;
   }

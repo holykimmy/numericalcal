@@ -59,12 +59,12 @@ function Lagrange() {
               margin: "5%",
               marginLeft: "20%",
               width: "30%",
-              height: "40%",
+              height: "50%",
               backgroundColor: "white",
               marginInlineEnd: "5%",
               marginBlockEnd: "5%",
               color: "black",
-              fontSize: "18px",
+              fontSize: "10px",
               fontWeight: "bold",
             }}
             id={"a" + p}
@@ -79,12 +79,12 @@ function Lagrange() {
               margin: "5%",
               marginLeft: "20%",
               width: "30%",
-              height: "40%",
+              height: "50%",
               backgroundColor: "white",
               marginInlineEnd: "5%",
               marginBlockEnd: "5%",
               color: "black",
-              fontSize: "18px",
+              fontSize: "10px",
               fontWeight: "bold",
             }}
             id={"b" + p}
@@ -214,7 +214,7 @@ function Lagrange() {
         {smatrix && (
           <Layout style={{ marginLeft: "10%" }}>
             <Layout>
-              <Header style={{ background: "white", paddingLeft: "22%" }}>
+              <Header style={{ background: "white", paddingLeft: "5%" }}>
                 {/* <div> */}
                 <label>Please input initial value</label>
                 <Input
@@ -227,7 +227,7 @@ function Lagrange() {
                     marginInlineEnd: "5%",
                     marginBlockEnd: "5%",
                     color: "black",
-                    fontSize: "18px",
+                    fontSize: "10px",
                     fontWeight: "bold",
                   }}
                   name="number"
@@ -245,7 +245,7 @@ function Lagrange() {
                     marginInlineEnd: "5%",
                     marginBlockEnd: "5%",
                     color: "black",
-                    fontSize: "18px",
+                    fontSize: "10px",
                     fontWeight: "bold",
                   }}
                   name="number"
@@ -284,7 +284,7 @@ function Lagrange() {
                   height: "40%",
                 }}
               >
-                Calculate!!
+                Calculate
               </Button>
             </Footer>
           </Layout>

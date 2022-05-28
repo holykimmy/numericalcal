@@ -35,7 +35,7 @@ function Linear() {
   async function exa() {
     let xx = await axios({
       method: "get",
-      url: "http://localhost:4000/lg",
+      url: "http://localhost:4000/lr",
     })
       .then(response => {
         return response.data;
@@ -186,7 +186,7 @@ function Linear() {
   }
   return (
     <>
-      <h1 style={{ margin: "1%", fontSize: "56px" }}>Lagrange</h1>
+      <h1 style={{ margin: "1%", fontSize: "56px" }}>Linear regresstion</h1>
       <Layout style={{ background: "white", padding: "0%" }}>
         {sinput && (
           <div>
